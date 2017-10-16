@@ -1,0 +1,10 @@
+.ide
+.DS_STORE
+node_modules/
+
+client/dist/
+client/node_modules/
+
+server/node_modules/
+server/dist
+server/src/config/config.ts

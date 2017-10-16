@@ -1,0 +1,14 @@
+{
+  "name": "wp_killer",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "startall": "concurrently 'npm start --prefix client' 'npm start --prefix server'"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "concurrently": "^3.5.0"
+  }
+}

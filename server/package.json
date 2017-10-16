@@ -1,0 +1,32 @@
+{
+  "name": "blog_server_koa",
+  "version": "1.0.0",
+  "description": "Blog server-side",
+  "scripts": {
+    "build": "tsc",
+    "build:prod": "NODE_ENV=production tsc",
+    "start": "nodemon",
+    "start:prod": "npm run build:prod && NODE_ENV=production node dist/server.js"
+  },
+  "author": "Mark Piispanen",
+  "license": "ISC",
+  "dependencies": {
+    "@koa/cors": "2",
+    "jsonwebtoken": "^7.3.0",
+    "koa": "^2.0.1",
+    "koa-bodyparser": "^4.1.0",
+    "koa-jwt": "^3.2.2",
+    "koa-router": "^7.2.1",
+    "koa-send": "^3.3.0",
+    "koa-static": "^3.0.0",
+    "mongodb": "^2.2.24",
+    "sanitize-html": "^1.14.1"
+  },
+  "devDependencies": {
+    "@types/koa": "^2.0.38",
+    "nodemon": "^1.11.0",
+    "ts-node": "^2.1.0",
+    "tslint": "^4.5.1",
+    "typescript": "^2.2.1"
+  }
+}

@@ -1,0 +1,19 @@
+{
+    "presets": [
+        "flow",
+        [
+            "latest",
+            {
+                "es2015": {
+                    "modules": false
+                }
+            }
+        ],
+        "react"
+    ],
+    "plugins": [
+        "react-hot-loader/babel",
+        "transform-object-rest-spread",
+        "transform-class-properties"
+    ]
+}

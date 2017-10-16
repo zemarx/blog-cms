@@ -1,0 +1,82 @@
+
+//--------------------DATABASE------------------------------
+
+=User
+    -user_id
+    -username
+    -email ???
+    -persmissions = "admin|user|..."
+
+=Post
+    -id
+    -author_name
+    -title
+    -content
+    -last_time_edited
+    -date_created
+
+=Comment
+    -id
+    -post_id(id -> Post)
+    -parent_id(id -> Comment)
+    -author_name
+    -content
+    -date_created
+
+//--------------------DATABASE FUNCTIONS---------------------
+
+POSTS:
+    DONE: GET ALL POSTS     --GET--
+    DONE: ADD/CREATE POST   --POST--
+    DONE: GET ONE POST      --GET--
+    DONE: DELETE ONE POST   --DELETE--
+    DONE: UPDATE ONE POST   --PUT--
+
+COMMENTS:
+    TODO: GET ALL COMMENTS FOR POST     --GET--
+    TODO: ADD ONE COMMENT TO POST       --POST--
+    TODO: DELETE ONE COMMENT FROM POST  --DELETE--
+    TODO: ????
+
+
+//--------------------BACKLOG--------------------------
+
+TODO: FIX GLOBAL STYLES
+
+TODO: Maybe a property like "SHOW THIS POST"/"MAKE VISIBLE", so that author can hide chosen posts from users ?????
+
+TODO: ADD ABILITY TO HIDE/MARK AS SPAM COMMENTS AS ADMIN(LOGGED IN)
+
+TODO: MAKE POST FILTER BY YEAR OR MONTH
+
+TODO: SEARCH POSTS
+
+TODO: TAGS ON POSTS
+
+TODO: FILTER POSTS BY YEAR, TAGS ETC.
+
+TODO: PAGES OR INFINITY SCROLL
+
+TODO: MAYBE REGISTRATION
+
+
+//--------------------IN PROGRESS--------------------------
+
+
+
+
+//--------------------DONE--------------------------
+
+TODO: FIX STYLES IN 'CREATE POST' VIEW IN FIREFOX(BUTTOS 'SAVE' AND 'CANCEL')
+
+TODO: ADD 'LAST EDITED' PROPERTY TO POST
+
+TODO: deletion actually will make the post archived, so that is can be later restored if necessary
+
+TODO: CAN UPDATE SELECTED POST
+
+TODO: MAKE COMMENTS
+
+TODO: IMPLEMENT DELETION OF POST
+
+TODO: MAKE LOGIN

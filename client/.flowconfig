@@ -1,0 +1,11 @@
+[ignore]
+.*/node_modules/draft-js/.*
+
+
+[include]
+
+[libs]
+
+[options]
+module.name_mapper='^components' ->'<PROJECT_ROOT>/src/components'
+module.name_mapper='^redux-local' ->'<PROJECT_ROOT>/src/redux'
